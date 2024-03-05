@@ -2569,6 +2569,8 @@ ul.social-links li:last-child a {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   border-radius: 8px;
+  width: 400px;
+  height: 300px;
 }
 
 .portfolio-grid figure .portfolio-item-img:after {
