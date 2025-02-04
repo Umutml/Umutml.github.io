@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3ebb7c3-33a4-4abd-b77e-b739d58a1edc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-3-columns-IDLE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-IDLE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-post-1-IDLE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-2-columns-IDLE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-4-columns-IDLE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-5-columns-IDLE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-project-1-IDLE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-project-2-IDLE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-project-3-IDLE.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio.html" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resume-IDLE.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +29,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Umutml"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Umutml/Umutml.github.io.git",
+    "accountId": "fe8635ff-6579-4ab6-a01b-de2780e225f2"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2br90UiW4wxsbjVZKVBhxg46gbk" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -27,7 +53,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -46,10 +74,15 @@
       <option name="presentableId" value="Default" />
       <updated>1706962107961</updated>
       <workItem from="1706962109558" duration="477000" />
+      <workItem from="1738649615155" duration="1736000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>
