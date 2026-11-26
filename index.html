@@ -3,270 +3,319 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Umut Muslihoğlu — Game Developer</title>
-  <meta name="description" content="Umut Muslihoğlu — Unity game developer with 4 years shipping large-scope mobile casual games: analytics and ad-monetization integrations, multiplayer (Photon Bolt and in-house backends), CI/CD, and CPU/GPU/RAM profiling.">
-  <meta name="keywords" content="resume, portfolio, game developer, gamedev, unity, Unity game developer, Unity 3D, game development, Unity programming, Unity C#, Unity Addressables, cloud content delivery, game optimization, multiplayer games, game developer portfolio, Unity projects, game programming">
+  <title>Umut Muslihoğlu — Unity Developer</title>
+  <meta name="description" content="Umut Muslihoğlu — Unity developer with 4 years building and shipping live multiplayer mobile games: client architecture (VContainer, UniTask), real-time systems (SignalR, WebSocket, Photon Bolt), Addressables, performance optimization and iOS/Android release pipelines.">
+  <meta name="keywords" content="Unity developer, game developer, Unity C#, VContainer, UniTask, SignalR, Photon Bolt, Addressables, mobile games, multiplayer, CI/CD, Fastlane, game optimization, portfolio">
   <meta name="author" content="Umut Muslihoğlu">
+  <meta name="theme-color" content="#D92B14">
   <link rel="canonical" href="https://umutmuslihoglu.com/">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Umut Muslihoğlu — Game Developer">
-  <meta property="og:description" content="Unity game developer with 4 years shipping large-scope mobile casual games: analytics/ad integrations, multiplayer, CI/CD, and performance profiling.">
-  <meta property="og:image" content="https://umutmuslihoglu.com/img/main_photo.jpg">
+  <meta property="og:title" content="Umut Muslihoğlu — Unity Developer">
+  <meta property="og:description" content="Unity developer with 4 years shipping live multiplayer mobile games — No Surrender Heroes (200K+ downloads), Football Mates (100K+ downloads).">
+  <meta property="og:image" content="https://umutmuslihoglu.com/img/og-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Umut Muslihoğlu — Unity developer shipping live multiplayer mobile games">
   <meta property="og:url" content="https://umutmuslihoglu.com/">
+  <meta property="og:site_name" content="Umut Muslihoğlu">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Umut Muslihoğlu — Game Developer">
-  <meta name="twitter:description" content="Unity game developer with 4 years shipping large-scope mobile casual games: analytics/ad integrations, multiplayer, CI/CD, and performance profiling.">
-  <meta name="twitter:image" content="https://umutmuslihoglu.com/img/main_photo.jpg">
 
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Umut Muslihoğlu",
+    "jobTitle": "Unity Developer",
+    "url": "https://umutmuslihoglu.com/",
+    "image": "https://umutmuslihoglu.com/img/main_photo_red.jpg",
+    "email": "mailto:umutmuslihoglu@gmail.com",
+    "sameAs": ["https://www.linkedin.com/in/relw/", "https://github.com/umutml"],
+    "knowsAbout": ["Unity", "C#", "VContainer", "UniTask", "SignalR", "Photon Bolt", "Addressables", "Mobile game development", "CI/CD"]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=VT323&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Schibsted+Grotesk:wght@400..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/portfolio.css">
 </head>
 <body>
 
 <a class="skip-link" href="#main-content">Skip to content</a>
 
-<noscript><style>#boot{display:none;}</style></noscript>
-<div id="boot">
-  <span class="boot-line" id="boot-line">Loading scene<span class="cursor"></span></span>
-</div>
-
-<header class="editor-bar">
-  <div class="editor-bar-inner">
-    <div class="win-dots"><span></span><span></span><span></span></div>
-    <div class="wordmark"><b>umut_muslihoglu</b>.unity</div>
-    <nav class="editor-tabs" id="tabs" aria-label="Section navigation">
-      <a href="#scene" class="active" aria-current="true">Scene</a>
-      <a href="#inspector">Inspector</a>
-      <a href="#profiler">Profiler</a>
-      <a href="#project">Project</a>
-      <a href="#console">Console</a>
+<header class="site-header" id="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="#top">Umut Muslihoğlu</a>
+    <nav class="site-nav" aria-label="Sections">
+      <a href="#project">Work</a>
+      <a href="#career">Career</a>
+      <a href="#toolbox">Toolbox</a>
       <a href="#contact">Contact</a>
     </nav>
+    <a class="header-cv" href="Umut_Muslihoglu_Resume.pdf" target="_blank" rel="noopener">CV</a>
   </div>
 </header>
 
 <main id="main-content">
+
   <!-- HERO -->
-  <section class="hero" id="scene">
-    <div class="container">
-      <div class="gameview">
-        <div class="gameview-toolbar">
-          <div class="gv-btn"><svg viewBox="0 0 8 8" fill="none" aria-hidden="true"><path d="M1 1L7 4L1 7V1Z" fill="currentColor"/></svg></div>
-          <span>Game View — Maximize on Play</span>
+  <section class="hero" id="top">
+    <div class="wrap">
+      <p class="hero-now"><span class="live" aria-hidden="true"></span>Now building an indie game for Steam</p>
+      <h1 class="hero-name" lang="tr"><span class="line"><span>Umut</span></span><span class="line"><span>Muslihoğlu</span></span></h1>
+
+      <div class="hero-lower">
+        <div class="hero-copy">
+          <p class="hero-lede">Unity developer. Four years building and shipping live multiplayer mobile games.</p>
+          <p class="hero-bio">I work on scalable client architecture (VContainer, UniTask), real-time systems (SignalR, WebSocket, Photon Bolt), Addressables and CPU/GPU/memory optimization, and own iOS/Android release pipelines end to end.</p>
+          <div class="hero-actions">
+            <a href="#project" class="btn btn-black">See the games</a>
+            <a href="Umut_Muslihoglu_Resume.pdf" target="_blank" rel="noopener" class="btn btn-line-light">Download CV</a>
+          </div>
         </div>
-        <div class="gameview-body">
-          <div class="hero-copy">
-            <div class="hero-status"><span class="dot"></span> whoami</div>
-            <h1>Umut Muslihoğlu<br><span id="role-text">Game Developer</span></h1>
-            <p class="hero-bio">4 years of professional experience shipping large-scope mobile casual games, across the full development lifecycle: analytics and ad-monetization integration, live production bug fixing, and CPU/GPU/memory/build-size optimization. Delivered multiplayer systems on both Photon Bolt and a fully in-house backend, and built several core systems from the ground up.</p>
-            <div class="tag-row">
-              <span class="tag">Unity / C#</span>
-              <span class="tag">Addressables</span>
-              <span class="tag">Multiplayer Systems</span>
-              <span class="tag">Analytics &amp; Ads</span>
-              <span class="tag">CI/CD</span>
-              <span class="tag">Profiling</span>
-            </div>
-            <div class="hero-actions">
-              <a href="UMUTRESUME-CORE.pdf" target="_blank" rel="noopener" class="btn btn-primary">
-                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v13m0 0l-5-5m5 5l5-5M5 21h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Download CV
-              </a>
-              <a href="mailto:umutmuslihoglu@gmail.com" class="btn btn-ghost">Contact →</a>
-            </div>
+        <figure class="hero-photo">
+          <img src="img/main_photo_red.jpg" alt="Portrait of Umut Muslihoğlu" width="1200" height="1345">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- REEL -->
+  <div class="reel-wrap" aria-hidden="true">
+    <div class="reel">
+      <div class="reel-track" id="reel-track">
+        <img src="img/portfolio/1.jpg" alt="">
+        <img src="img/portfolio/0.jpg" alt="">
+        <img src="img/portfolio/thewar7.jpg" alt="">
+        <img src="img/portfolio/4.jpg" alt="">
+        <img src="img/portfolio/2.jpg" alt="">
+        <img src="img/portfolio/6.jpg" alt="">
+        <img src="img/portfolio/5.jpg" alt="">
+        <img src="img/portfolio/3.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <section class="stats" aria-label="Highlights">
+    <div class="wrap">
+      <dl class="stat-grid">
+        <div><dd>4 yrs</dd><dt>Building and shipping Unity games professionally</dt></div>
+        <div><dd>200K+</dd><dt>Downloads on No Surrender Heroes, a live card battler</dt></div>
+        <div><dd>100K+</dd><dt>Downloads on Football Mates, as sole Unity client developer</dt></div>
+        <div><dd>2K</dd><dt>Daily active players on Football Mates</dt></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="section" id="project">
+    <div class="wrap">
+      <header class="section-head">
+        <h2 class="section-title">Shipped work</h2>
+        <p class="section-sub">Every trailer plays right here. Use the arrow keys to flip through them.</p>
+      </header>
+
+      <div id="project-grid">
+        <article class="feature">
+          <button class="feature-media work-item" type="button" data-video="39Z9xFfhqWQ" data-title="No Surrender Heroes" aria-label="Play No Surrender Heroes trailer">
+            <img src="img/portfolio/1.jpg" alt="" loading="lazy">
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span>
+          </button>
+          <div class="feature-text">
+            <h3>No Surrender Heroes</h3>
+            <dl class="feature-facts">
+              <div><dt>Studio</dt><dd>No Surrender Studio</dd></div>
+              <div><dt>Genre</dt><dd>Card battler</dd></div>
+              <div><dt>Downloads</dt><dd>200K+</dd></div>
+            </dl>
+            <p>Shipped features and UI on a live title, improved its Photon Bolt multiplayer and built the rewarded-ad systems.</p>
+            <button class="text-link" type="button" data-open="0">Watch trailer</button>
           </div>
-          <div class="hero-photo">
-            <div class="hero-photo-frame">
-              <span class="frame-tag"><span class="dot"></span>LIVE</span>
-              <img src="img/main_photo.jpg" alt="Umut Muslihoğlu">
-            </div>
+        </article>
+
+        <article class="feature feature-flip">
+          <button class="feature-media work-item" type="button" data-video="hFh32XwrhJg" data-title="NS The War" aria-label="Play NS The War trailer">
+            <img src="img/portfolio/thewar7.jpg" alt="" loading="lazy">
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span>
+          </button>
+          <div class="feature-text">
+            <h3>NS The War</h3>
+            <dl class="feature-facts">
+              <div><dt>Studio</dt><dd>No Surrender Studio</dd></div>
+              <div><dt>Genre</dt><dd>Shooter</dd></div>
+              <div><dt>Downloads</dt><dd>10K+</dd></div>
+            </dl>
+            <p>Build master for the iOS/Android CI/CD pipeline, plus graphics, CPU and memory optimization with Addressables to raise FPS on live builds.</p>
+            <button class="text-link" type="button" data-open="1">Watch trailer</button>
           </div>
+        </article>
+
+        <h3 class="more-title">More games</h3>
+        <div class="more-grid">
+          <button class="tile work-item" type="button" data-video="hEWqoCLH-uQ" data-title="Clash Card Battler">
+            <span class="tile-img"><img src="img/portfolio/2.jpg" alt="" loading="lazy"><span class="play play-sm" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></span>
+            <span class="tile-title">Clash Card Battler</span>
+          </button>
+          <button class="tile work-item" type="button" data-video="TGd-jZM_Trw" data-title="Zombie Survival Apocalyptic">
+            <span class="tile-img"><img src="img/portfolio/0.jpg" alt="" loading="lazy"><span class="play play-sm" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></span>
+            <span class="tile-title">Zombie Survival Apocalyptic</span>
+          </button>
+          <button class="tile work-item" type="button" data-video="lH8CeaDmJk0" data-title="Sumo Fight">
+            <span class="tile-img"><img src="img/portfolio/4.jpg" alt="" loading="lazy"><span class="play play-sm" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></span>
+            <span class="tile-title">Sumo Fight</span>
+          </button>
+          <button class="tile work-item" type="button" data-video="FOa_WvdYiOQ" data-title="Juger Rick Platformer">
+            <span class="tile-img"><img src="img/portfolio/5.jpg" alt="" loading="lazy"><span class="play play-sm" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></span>
+            <span class="tile-title">Juger Rick Platformer</span>
+          </button>
+          <button class="tile work-item" type="button" data-video="Vmr6CZFDwVw" data-title="Ball Roller">
+            <span class="tile-img"><img src="img/portfolio/6.jpg" alt="" loading="lazy"><span class="play play-sm" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></span>
+            <span class="tile-title">Ball Roller</span>
+          </button>
+          <button class="tile work-item" type="button" data-video="5tp6e18sgAY" data-title="Baker John">
+            <span class="tile-img"><img src="img/portfolio/3.jpg" alt="" loading="lazy"><span class="play play-sm" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg></span></span>
+            <span class="tile-title">Baker John</span>
+          </button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- INSPECTOR -->
-  <section id="inspector">
-    <div class="container">
-      <div class="kicker">component/overview</div>
-      <h2 class="section-title">Inspector</h2>
-      <p class="section-sub">Everything attached to this GameObject — what I work on day to day, and how confident I am in each system.</p>
+  <!-- QUOTE POSTER -->
+  <section class="poster" aria-label="Quote">
+    <div class="wrap">
+      <figure>
+        <blockquote>A delayed game is eventually good, but a rushed game is forever bad.</blockquote>
+        <figcaption>Shigeru Miyamoto</figcaption>
+      </figure>
+    </div>
+  </section>
 
-      <div class="inspector-grid">
-        <div class="panel">
-          <div class="panel-head"><span>About.cs</span><span>public class</span></div>
-          <div class="panel-body">
-            <div class="prop-row">
-              <div class="prop-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 4L2 12l6 8M16 4l6 8-6 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-              <div class="prop-text"><h4>Programming</h4><p>Building and maintaining gameplay systems and the underlying architecture that supports them, across the full lifecycle of a shipped game.</p></div>
-            </div>
-            <div class="prop-row">
-              <div class="prop-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/></svg></div>
-              <div class="prop-text"><h4>Live Bug Fixing</h4><p>Triaging and resolving production issues on live titles — the kind of bugs that only surface under real player load.</p></div>
-            </div>
-            <div class="prop-row">
-              <div class="prop-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M3.27 6.96L12 12l8.73-5.04M12 22.08V12" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
-              <div class="prop-text"><h4>Unity Asset Management</h4><p>Addressables and cloud content delivery — dynamic loading and updating so game assets ship independently of the app binary.</p></div>
-            </div>
-            <div class="prop-row">
-              <div class="prop-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 3v18h18M7 15l4-5 3 3 5-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-              <div class="prop-text"><h4>Analytics &amp; Monetization</h4><p>Integrating analytics and ad-monetization SDKs into shipped titles — event tracking, ad placement, and mediation.</p></div>
-            </div>
-            <div class="prop-row">
-              <div class="prop-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/><circle cx="5" cy="7" r="2" stroke="currentColor" stroke-width="2"/><circle cx="19" cy="7" r="2" stroke="currentColor" stroke-width="2"/><circle cx="5" cy="17" r="2" stroke="currentColor" stroke-width="2"/><circle cx="19" cy="17" r="2" stroke="currentColor" stroke-width="2"/><path d="M9.8 10.8L6.5 8.2M14.2 10.8l3.3-2.6M9.8 13.2l-3.3 2.6M14.2 13.2l3.3 2.6" stroke="currentColor" stroke-width="1.6"/></svg></div>
-              <div class="prop-text"><h4>Multiplayer Systems</h4><p>Built multiplayer features on both Photon Bolt and a fully in-house backend, across different networking architectures.</p></div>
-            </div>
-            <div class="prop-row">
-              <div class="prop-icon"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 3h18v18H3V3z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M3 9h18M9 21V9" stroke="currentColor" stroke-width="2"/></svg></div>
-              <div class="prop-text"><h4>Performance &amp; Build Optimization</h4><p>Profiling CPU, GPU, and memory, and trimming build size — keeping large-scope mobile titles running smoothly.</p></div>
-            </div>
+  <!-- CAREER -->
+  <section class="section" id="career">
+    <div class="wrap">
+      <header class="section-head">
+        <h2 class="section-title">Career</h2>
+        <p class="section-sub">Remote-first since 2023, on live titles with real players from day one.</p>
+      </header>
+
+      <ol class="timeline">
+        <li class="job">
+          <p class="job-years">2026 – now</p>
+          <div class="job-body">
+            <h3>Indie Game Developer <span>Personal project</span></h3>
+            <p class="job-sum">A Unity game built from scratch with an AI-assisted, MCP-based workflow, being prepared for release on Steam.</p>
+            <ul>
+              <li>Developing the whole game with AI coding agents and MCP tools wired into the Unity Editor and IDE.</li>
+              <li>Directing the agents, then reviewing, testing and refactoring their code for correctness and performance.</li>
+            </ul>
           </div>
+        </li>
+        <li class="job">
+          <p class="job-years">2025 – 2026</p>
+          <div class="job-body">
+            <h3>Game Developer <span>Kumkuat Games, remote</span></h3>
+            <p class="job-sum">Football Mates, a live multiplayer football management game.</p>
+            <ul>
+              <li>Sole Unity client developer (100K+ downloads, 2K DAU), owning architecture, UI/UX and releases end to end.</li>
+              <li>Architected a modular client with VContainer DI and UniTask async flows in a continuously shipping codebase.</li>
+              <li>Integrated SignalR/WebSocket and REST APIs, and negotiated API contracts with the backend team.</li>
+              <li>Delivered multi-account profile switching, real-time match features and in-game subsystems.</li>
+              <li>Integrated Firebase Analytics and ironSource mediation; managed iOS/Android builds and releases.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job">
+          <p class="job-years">2023 – 2025</p>
+          <div class="job-body">
+            <h3>Game Developer <span>No Surrender Studio, remote</span></h3>
+            <p class="job-sum">Two live titles: No Surrender Heroes (card battler, 200K+ downloads) and The War (shooter, 10K+ downloads).</p>
+            <ul>
+              <li>Shipped features and UI on live titles; improved Photon Bolt multiplayer and built rewarded-ad systems.</li>
+              <li>Build master for iOS/Android CI/CD, shortening build times and keeping releases smooth.</li>
+              <li>Optimized graphics, CPU and memory usage and managed Addressables, improving FPS on live titles.</li>
+              <li>Built Unity editor tools that sped up developer workflows and let designers tweak content on their own.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job">
+          <p class="job-years">2022</p>
+          <div class="job-body">
+            <h3>Intern <span>DODO Game, Istanbul</span></h3>
+            <p class="job-sum">A four-month internship on Unity fundamentals, building prototypes and clone games in a production workflow.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- TOOLBOX -->
+  <section class="section section-grey" id="toolbox">
+    <div class="wrap">
+      <header class="section-head">
+        <h2 class="section-title">Toolbox</h2>
+        <p class="section-sub">What I reach for, grouped by the problem it solves.</p>
+      </header>
+      <div class="tool-grid">
+        <div class="tool">
+          <h3>Client architecture</h3>
+          <p>Modular, testable Unity clients that keep shipping.</p>
+          <ul><li>C# &amp; OOP</li><li>VContainer DI</li><li>UniTask async</li><li>Gameplay programming</li></ul>
         </div>
-
-        <div class="panel">
-          <div class="panel-head"><span>Skills.cs</span><span>[SerializeField]</span></div>
-          <div class="panel-body">
-            <div class="skill-row" data-skill="92"><div class="skill-top"><span class="skill-name">Unity &amp; C#</span><span class="skill-level">Expert</span></div><div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div></div>
-            <div class="skill-row" data-skill="85"><div class="skill-top"><span class="skill-name">Addressables &amp; Asset Pipelines</span><span class="skill-level">Advanced</span></div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
-            <div class="skill-row" data-skill="80"><div class="skill-top"><span class="skill-name">Analytics &amp; Ad Monetization</span><span class="skill-level">Advanced</span></div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
-            <div class="skill-row" data-skill="75"><div class="skill-top"><span class="skill-name">Multiplayer Systems</span><span class="skill-level">Proficient</span></div><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div></div>
-            <div class="skill-row" data-skill="80"><div class="skill-top"><span class="skill-name">CI/CD &amp; Build Automation</span><span class="skill-level">Advanced</span></div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
-            <div class="skill-row" data-skill="85"><div class="skill-top"><span class="skill-name">Performance &amp; Build Optimization</span><span class="skill-level">Advanced</span></div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
-            <div class="skill-row" data-skill="90"><div class="skill-top"><span class="skill-name">Debugging &amp; Live-ops Fixes</span><span class="skill-level">Expert</span></div><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
-          </div>
+        <div class="tool">
+          <h3>Multiplayer &amp; backend</h3>
+          <p>Real-time play and the API contracts behind it.</p>
+          <ul><li>SignalR</li><li>WebSocket</li><li>Photon Bolt</li><li>REST APIs</li></ul>
+        </div>
+        <div class="tool">
+          <h3>Performance &amp; assets</h3>
+          <p>Smooth frame times and lean builds on mid-range phones.</p>
+          <ul><li>CPU / GPU / memory profiling</li><li>Addressables</li><li>Cloud Content Delivery</li></ul>
+        </div>
+        <div class="tool">
+          <h3>Release pipelines</h3>
+          <p>iOS and Android builds that ship without drama.</p>
+          <ul><li>Unity Cloud Build</li><li>Fastlane</li><li>CI/CD</li><li>Git workflows</li></ul>
+        </div>
+        <div class="tool">
+          <h3>Live-ops &amp; monetization</h3>
+          <p>Measuring players and earning from them responsibly.</p>
+          <ul><li>ironSource mediation</li><li>Firebase Analytics</li><li>Remote Config</li><li>IAP</li></ul>
+        </div>
+        <div class="tool">
+          <h3>AI-assisted development</h3>
+          <p>Agents do the typing; I own the architecture and the review.</p>
+          <ul><li>AI coding agents</li><li>MCP tooling in the Unity Editor</li><li>Editor tools</li></ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROFILER -->
-  <section id="profiler">
-    <div class="container">
-      <div class="kicker">runtime/stats</div>
-      <h2 class="section-title">Profiler — fun facts</h2>
-      <p class="section-sub">Not exactly CPU frame time, but tracked all the same.</p>
-      <div class="profiler-grid">
-        <div class="stat-tile">
-          <div class="stat-label">DOCS READ</div>
-          <div class="stat-value">3,561</div>
-          <div class="spark" data-bars="4,7,5,9,6,10,8,12,9,13"></div>
-        </div>
-        <div class="stat-tile">
-          <div class="stat-label">WORKING HOURS</div>
-          <div class="stat-value">4,780</div>
-          <div class="spark" data-bars="6,6,7,8,7,9,10,9,11,12"></div>
-        </div>
-        <div class="stat-tile">
-          <div class="stat-label">GAMES SHIPPED</div>
-          <div class="stat-value">12</div>
-          <div class="spark" data-bars="2,3,3,5,4,6,7,8,8,10"></div>
-        </div>
-        <div class="stat-tile">
-          <div class="stat-label">COFFEE (CUPS)</div>
-          <div class="stat-value">962</div>
-          <div class="spark" data-bars="8,9,7,10,9,11,10,13,12,14"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECT WINDOW -->
-  <section id="project">
-    <div class="container">
-      <div class="kicker">assets/shipped</div>
-      <h2 class="section-title">Project</h2>
-      <p class="section-sub">Titles I've contributed to — press play and flip through them right here, no tab-switching required.</p>
-      <div class="project-grid" id="project-grid">
-        <button class="asset-tile" type="button" data-video="TGd-jZM_Trw" data-title="Zombie Survival Apocalyptic">
-          <div class="asset-thumb"><img src="img/portfolio/0.png" alt="Zombie Survival Apocalyptic"><div class="asset-fold"></div>
-            <div class="asset-play"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" stroke="#e9e7e2" stroke-width="1.5"/><path d="M10 8l6 4-6 4V8z" fill="#e9e7e2"/></svg></div>
-          </div>
-          <div class="asset-meta"><h4>Zombie Survival Apocalyptic</h4><span>PLAY ▸</span></div>
-        </button>
-        <button class="asset-tile" type="button" data-video="39Z9xFfhqWQ" data-title="No Surrender Heroes">
-          <div class="asset-thumb"><img src="img/portfolio/1.png" alt="No Surrender Heroes"><div class="asset-fold"></div>
-            <div class="asset-play"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" stroke="#e9e7e2" stroke-width="1.5"/><path d="M10 8l6 4-6 4V8z" fill="#e9e7e2"/></svg></div>
-          </div>
-          <div class="asset-meta"><h4>No Surrender Heroes</h4><span>PLAY ▸</span></div>
-        </button>
-        <button class="asset-tile" type="button" data-video="hFh32XwrhJg" data-title="NS The War">
-          <div class="asset-thumb"><img src="img/portfolio/thewar7.png" alt="NS The War"><div class="asset-fold"></div>
-            <div class="asset-play"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" stroke="#e9e7e2" stroke-width="1.5"/><path d="M10 8l6 4-6 4V8z" fill="#e9e7e2"/></svg></div>
-          </div>
-          <div class="asset-meta"><h4>NS The War</h4><span>PLAY ▸</span></div>
-        </button>
-        <button class="asset-tile" type="button" data-video="hEWqoCLH-uQ" data-title="Clash Card Battler">
-          <div class="asset-thumb"><img src="img/portfolio/2.png" alt="Clash Card Battler"><div class="asset-fold"></div>
-            <div class="asset-play"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" stroke="#e9e7e2" stroke-width="1.5"/><path d="M10 8l6 4-6 4V8z" fill="#e9e7e2"/></svg></div>
-          </div>
-          <div class="asset-meta"><h4>Clash Card Battler</h4><span>PLAY ▸</span></div>
-        </button>
-        <button class="asset-tile" type="button" data-video="lH8CeaDmJk0" data-title="Sumo Fight">
-          <div class="asset-thumb"><img src="img/portfolio/4.png" alt="Sumo Fight"><div class="asset-fold"></div>
-            <div class="asset-play"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" stroke="#e9e7e2" stroke-width="1.5"/><path d="M10 8l6 4-6 4V8z" fill="#e9e7e2"/></svg></div>
-          </div>
-          <div class="asset-meta"><h4>Sumo Fight</h4><span>PLAY ▸</span></div>
-        </button>
-        <button class="asset-tile" type="button" data-video="FOa_WvdYiOQ" data-title="Juger Rick Platformer">
-          <div class="asset-thumb"><img src="img/portfolio/5.png" alt="Juger Rick Platformer"><div class="asset-fold"></div>
-            <div class="asset-play"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" stroke="#e9e7e2" stroke-width="1.5"/><path d="M10 8l6 4-6 4V8z" fill="#e9e7e2"/></svg></div>
-          </div>
-          <div class="asset-meta"><h4>Juger Rick Platformer</h4><span>PLAY ▸</span></div>
-        </button>
-        <button class="asset-tile" type="button" data-video="Vmr6CZFDwVw" data-title="Ball Roller">
-          <div class="asset-thumb"><img src="img/portfolio/6.png" alt="Ball Roller"><div class="asset-fold"></div>
-            <div class="asset-play"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" stroke="#e9e7e2" stroke-width="1.5"/><path d="M10 8l6 4-6 4V8z" fill="#e9e7e2"/></svg></div>
-          </div>
-          <div class="asset-meta"><h4>Ball Roller</h4><span>PLAY ▸</span></div>
-        </button>
-        <button class="asset-tile" type="button" data-video="5tp6e18sgAY" data-title="Baker John">
-          <div class="asset-thumb"><img src="img/portfolio/3.png" alt="Baker John"><div class="asset-fold"></div>
-            <div class="asset-play"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="11" stroke="#e9e7e2" stroke-width="1.5"/><path d="M10 8l6 4-6 4V8z" fill="#e9e7e2"/></svg></div>
-          </div>
-          <div class="asset-meta"><h4>Baker John</h4><span>PLAY ▸</span></div>
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONSOLE LOG -->
-  <section id="console">
-    <div class="container">
-      <div class="kicker">debug/output</div>
-      <h2 class="section-title">Console</h2>
-      <p class="section-sub">A few lines of dev wisdom, pinned to the log.</p>
-      <div class="console-panel" id="console-log">
-        <div class="log-line"><span class="log-time">12:04:33</span><span class="log-tag log">LOG</span><span class="log-msg">"<b>A game is never finished, only abandoned.</b>" <cite>— Shigeru Miyamoto, Nintendo</cite></span></div>
-        <div class="log-line"><span class="log-time">12:04:37</span><span class="log-tag info">INFO</span><span class="log-msg">"<b>The most disastrous thing you can ever learn is your first programming language.</b>" <cite>— Alan Kay</cite></span></div>
-        <div class="log-line"><span class="log-time">12:04:41</span><span class="log-tag log">LOG</span><span class="log-msg">"<b>A delayed game is eventually good, but a rushed game is forever bad.</b>" <cite>— Shigeru Miyamoto, Nintendo</cite></span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT / DEPLOY -->
-  <section id="contact">
-    <div class="container">
-      <div class="kicker">ship/deploy</div>
-      <h2 class="section-title">Ready to Ship?</h2>
-      <p class="section-sub">Open to new challenges — let's connect and build something players will remember.</p>
-      <div class="deploy-card">
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2 class="contact-title">Let's talk</h2>
+      <div class="contact-grid">
         <div>
-          <h3>Let's build something together</h3>
-          <p>Whether it's a live-ops fire to put out or a new title to help ship, I'm happy to talk.</p>
-          <div class="deploy-meta">
-            <span><b>Email</b> · umutmuslihoglu@gmail.com</span>
-            <span><b>Location</b> · Tekirdağ, Turkey</span>
-            <span><b>Phone</b> · included in CV</span>
-          </div>
+          <p class="contact-lede">Open to remote roles on Unity teams shipping live games.</p>
+          <a class="contact-email" href="mailto:umutmuslihoglu@gmail.com">umutmuslihoglu@gmail.com</a>
         </div>
-        <div class="deploy-actions">
-          <a href="mailto:umutmuslihoglu@gmail.com" class="btn btn-primary">Send an Email</a>
-          <a href="https://www.linkedin.com/in/relw/" target="_blank" rel="noopener" class="btn btn-ghost">Connect on LinkedIn</a>
+        <div class="contact-side">
+          <div class="contact-actions">
+            <a href="mailto:umutmuslihoglu@gmail.com" class="btn btn-black">Send an email</a>
+            <a href="https://www.linkedin.com/in/relw/" target="_blank" rel="noopener" class="btn btn-line-light">LinkedIn</a>
+            <a href="https://github.com/umutml" target="_blank" rel="noopener" class="btn btn-line-light">GitHub</a>
+          </div>
+          <dl class="contact-facts">
+            <div><dt>Availability</dt><dd>Open to remote</dd></div>
+            <div><dt>Time zone</dt><dd>GMT+7</dd></div>
+          </dl>
         </div>
       </div>
     </div>
@@ -278,13 +327,12 @@
   <button class="lightbox-backdrop" type="button" data-lb-close aria-label="Close"></button>
   <div class="lightbox-window" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
     <div class="lightbox-toolbar">
-      <div class="win-dots"><span></span><span></span><span></span></div>
       <span class="lightbox-title" id="lightbox-title">—</span>
       <div class="lightbox-controls">
-        <button class="lb-btn" id="lb-prev" type="button" title="Previous (←)" aria-label="Previous project">
+        <button class="lb-btn" id="lb-prev" type="button" title="Previous (←)" aria-label="Previous game">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
-        <button class="lb-btn" id="lb-next" type="button" title="Next (→)" aria-label="Next project">
+        <button class="lb-btn" id="lb-next" type="button" title="Next (→)" aria-label="Next game">
           <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
         <a class="lb-btn" id="lb-open" href="#" target="_blank" rel="noopener" title="Open on YouTube" aria-label="Open on YouTube">
@@ -296,29 +344,24 @@
       </div>
     </div>
     <div class="lightbox-video-wrap">
-      <iframe id="lightbox-iframe" src="" title="Project trailer" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      <iframe id="lightbox-iframe" src="" title="Game trailer" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
     </div>
     <div class="lightbox-footer">
-      <span id="lightbox-index">01 / 08</span>
-      <span class="tag">Shipped Title</span>
+      <span id="lightbox-index">1 of 8</span>
+      <span>Use ← → to switch games</span>
     </div>
   </div>
 </div>
 
-<!-- BUILD STATUS BAR -->
-<footer class="statusbar">
-  <div class="statusbar-inner">
-    <div class="sb-left">
-      <span class="sb-build"><span class="dot"></span>Build Succeeded</span>
-      <span>main ⎇ umut/portfolio</span>
-      <span>© 2026 Umut Muslihoğlu</span>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© 2026 Umut Muslihoğlu</span>
+    <div class="socials">
+      <a href="mailto:umutmuslihoglu@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18v12H3V6z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></a>
+      <a href="https://www.linkedin.com/in/relw/" target="_blank" rel="noopener" aria-label="LinkedIn (relw)"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M7 10v7M7 7v.01M11 17v-4.5a2 2 0 014-.2M11 12.5V17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></a>
+      <a href="https://github.com/umutml" target="_blank" rel="noopener" aria-label="GitHub (umutml)"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
-    <div class="sb-right">
-      <a href="mailto:umutmuslihoglu@gmail.com" title="Email"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18v12H3V6z" stroke="currentColor" stroke-width="1.6"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.6"/></svg></a>
-      <a href="https://www.linkedin.com/in/relw/" target="_blank" rel="noopener" title="LinkedIn — relw"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M7 10v7M7 7v.01M11 17v-4.5a2 2 0 014-.2M11 12.5V17" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></a>
-      <a href="https://twitter.com/Relwsh" target="_blank" rel="noopener" title="X (Twitter) — Relwsh"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4l7.5 9.6L4.3 20H6.6l6-6.4 4.6 6.4H20l-7.9-10.1L19.4 4h-2.3l-5.5 5.9L7 4H4z" fill="currentColor"/></svg></a>
-      <a href="https://www.instagram.com/relwish/" target="_blank" rel="noopener" title="Instagram — relwish"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></svg></a>
-    </div>
+    <a class="to-top" href="#top">Back to top</a>
   </div>
 </footer>
 

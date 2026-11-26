@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://umutmuslihoglu.com/sitemap.xml

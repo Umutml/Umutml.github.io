@@ -1,79 +1,51 @@
-// boot sequence
+var REDUCED = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+// header: transparent over the red hero, white once past it
 (function(){
-  var boot = document.getElementById('boot');
-  var line = document.getElementById('boot-line');
-  var steps = ['Loading scene', 'Compiling scripts', 'Importing assets', 'Ready'];
-  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(reduced){ boot.classList.add('hide'); }
-  else {
-    var i = 0;
-    var iv = setInterval(function(){
-      i++;
-      if(i < steps.length){
-        line.innerHTML = steps[i] + '<span class="cursor"></span>';
-      } else {
-        clearInterval(iv);
-        boot.classList.add('hide');
-      }
-    }, 420);
+  var header = document.getElementById('site-header');
+  var hero = document.getElementById('top');
+  if(!header || !hero) return;
+  function update(){
+    header.classList.toggle('scrolled', hero.getBoundingClientRect().bottom <= header.offsetHeight);
   }
+  window.addEventListener('scroll', update, {passive:true});
+  window.addEventListener('resize', update);
+  update();
 })();
 
-// role rotator
+// active nav link on scroll (also sets aria-current)
 (function(){
-  var roles = ['Game Developer', 'Programmer', 'Unity Developer', 'Tools & Pipeline Engineer'];
-  var el = document.getElementById('role-text');
-  var idx = 0;
-  setInterval(function(){
-    idx = (idx + 1) % roles.length;
-    el.textContent = roles[idx];
-  }, 2600);
-})();
-
-// active tab on scroll (also sets aria-current for assistive tech)
-(function(){
-  var sections = ['scene','inspector','profiler','project','console','contact'].map(function(id){return document.getElementById(id);});
-  var tabs = Array.prototype.slice.call(document.querySelectorAll('.editor-tabs a'));
+  var links = Array.prototype.slice.call(document.querySelectorAll('.site-nav a'));
   var io = new IntersectionObserver(function(entries){
     entries.forEach(function(entry){
-      if(entry.isIntersecting){
-        var id = entry.target.id;
-        tabs.forEach(function(t){
-          var isActive = t.getAttribute('href') === '#'+id;
-          t.classList.toggle('active', isActive);
-          if(isActive){ t.setAttribute('aria-current', 'true'); }
-          else { t.removeAttribute('aria-current'); }
-        });
-      }
+      if(!entry.isIntersecting) return;
+      var id = entry.target.id;
+      links.forEach(function(a){
+        var on = a.getAttribute('href') === '#' + id;
+        a.classList.toggle('active', on);
+        if(on){ a.setAttribute('aria-current', 'true'); }
+        else { a.removeAttribute('aria-current'); }
+      });
     });
   }, {rootMargin:'-45% 0px -50% 0px'});
-  sections.forEach(function(s){ if(s) io.observe(s); });
+  ['top','project','career','toolbox','contact'].forEach(function(id){
+    var s = document.getElementById(id); if(s) io.observe(s);
+  });
 })();
 
-// skill bars: fill from 0 up to their real value when scrolled into view
-// (bars already show the correct width via inline style if JS never runs)
+// screenshot reel: duplicate the set so the loop is seamless
 (function(){
-  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if(reduced) return;
-  var skillIo = new IntersectionObserver(function(entries, obs){
-    entries.forEach(function(entry){
-      if(entry.isIntersecting){
-        var fill = entry.target.querySelector('.skill-fill');
-        var target = fill.style.width;
-        fill.style.width = '0%';
-        requestAnimationFrame(function(){
-          requestAnimationFrame(function(){ fill.style.width = target; });
-        });
-        obs.unobserve(entry.target);
-      }
-    });
-  }, {threshold:.4});
-  document.querySelectorAll('.skill-row').forEach(function(el){ skillIo.observe(el); });
+  var track = document.getElementById('reel-track');
+  if(!track || REDUCED) return;
+  Array.prototype.slice.call(track.children).forEach(function(img){
+    track.appendChild(img.cloneNode(true));
+  });
+  track.classList.add('running');
 })();
 
-// project lightbox: play trailers in-page, flip through with prev/next
+// trailer lightbox: play in-page, flip through with prev/next
 (function(){
-  var tiles = Array.prototype.slice.call(document.querySelectorAll('#project-grid .asset-tile'));
+  var tiles = Array.prototype.slice.call(document.querySelectorAll('#project-grid .work-item'));
   if(!tiles.length) return;
 
   var lightbox = document.getElementById('lightbox');
@@ -86,24 +58,19 @@
   var current = 0;
   var lastFocused = null;
 
-  function embedSrc(id){
-    return 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
-  }
-
   function show(i){
     current = (i + tiles.length) % tiles.length;
     var tile = tiles[current];
     var id = tile.getAttribute('data-video');
-    var title = tile.getAttribute('data-title');
-    iframe.src = embedSrc(id);
-    titleEl.textContent = title;
+    iframe.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0';
+    titleEl.textContent = tile.getAttribute('data-title');
     openLink.href = 'https://www.youtube.com/watch?v=' + id;
-    indexEl.textContent = String(current + 1).padStart(2, '0') + ' / ' + String(tiles.length).padStart(2, '0');
+    indexEl.textContent = (current + 1) + ' of ' + tiles.length;
   }
 
   function focusableEls(){
     return Array.prototype.slice.call(
-      lightbox.querySelectorAll('button, a[href]')
+      lightbox.querySelectorAll('button:not(.lightbox-backdrop), a[href]')
     ).filter(function(el){ return el.offsetParent !== null; });
   }
 
@@ -113,8 +80,7 @@
     lightbox.classList.add('open');
     lightbox.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
-    var closeBtn = document.getElementById('lb-close');
-    if(closeBtn) closeBtn.focus();
+    document.getElementById('lb-close').focus();
   }
 
   function close(){
@@ -128,11 +94,12 @@
   tiles.forEach(function(tile, i){
     tile.addEventListener('click', function(){ open(i); });
   });
-
+  document.querySelectorAll('[data-open]').forEach(function(btn){
+    btn.addEventListener('click', function(){ open(Number(btn.getAttribute('data-open'))); });
+  });
   document.querySelectorAll('[data-lb-close]').forEach(function(el){
     el.addEventListener('click', close);
   });
-
   prevBtn.addEventListener('click', function(){ show(current - 1); });
   nextBtn.addEventListener('click', function(){ show(current + 1); });
 
@@ -142,30 +109,10 @@
     if(e.key === 'ArrowLeft'){ show(current - 1); return; }
     if(e.key === 'ArrowRight'){ show(current + 1); return; }
     if(e.key === 'Tab'){
-      var focusable = focusableEls();
-      if(!focusable.length) return;
-      var first = focusable[0];
-      var last = focusable[focusable.length - 1];
-      if(e.shiftKey && document.activeElement === first){
-        e.preventDefault();
-        last.focus();
-      } else if(!e.shiftKey && document.activeElement === last){
-        e.preventDefault();
-        first.focus();
-      }
+      var f = focusableEls();
+      if(!f.length) return;
+      if(e.shiftKey && document.activeElement === f[0]){ e.preventDefault(); f[f.length - 1].focus(); }
+      else if(!e.shiftKey && document.activeElement === f[f.length - 1]){ e.preventDefault(); f[0].focus(); }
     }
-  });
-})();
-
-// sparkline bars
-(function(){
-  document.querySelectorAll('.spark').forEach(function(spark){
-    var vals = spark.getAttribute('data-bars').split(',').map(Number);
-    var max = Math.max.apply(null, vals);
-    vals.forEach(function(v){
-      var bar = document.createElement('i');
-      bar.style.height = (v/max*100) + '%';
-      spark.appendChild(bar);
-    });
   });
 })();
